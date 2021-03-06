@@ -1,0 +1,30 @@
+{% extends "main.html" %}
+{% load crispy_forms_tags %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+
+
+<link rel="stylesheet" href="{% static 'users/main.css' %}">
+
+{% block content1 %}
+        <div class="form-section">
+            <form method="POST">
+                {% csrf_token %}
+                <div class="col-md-4">
+                {{ form|crispy }}
+                </div>
+                <br/>
+                <button type="submit" class="btn btn-outline-warning">Login</button>
+            </form>
+        </div>
+{% endblock %}
+</body>
+</html>

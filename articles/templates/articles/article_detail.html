@@ -1,0 +1,21 @@
+{% extends 'main.html' %}
+
+{% block content2 %}
+<br/>
+<br/>
+<div class="layer1">
+  <div3 class="container-lg">
+    <h2 align="center">{{ article.title }}</h2>
+    <br/>
+    <p2>{{ article.content|safe }}</p2>
+  </div3>
+</div>
+<div>
+  {% if object.author == user %}
+  <hr>
+  <a href="{% url 'article-update' object.id %}" class="btn btn-info">Update article</a>
+  <a href="{% url 'article-delete' object.id %}" class="btn btn-danger">Delete</a>
+  {% endif %}
+</div>
+<br/>
+{% endblock %}
