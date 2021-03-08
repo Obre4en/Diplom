@@ -9,7 +9,7 @@ from django.views.generic import (
 from .models import Article
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.urls import reverse_lazy
-
+from django.urls import reverse
 # Create your views here.
 
 
