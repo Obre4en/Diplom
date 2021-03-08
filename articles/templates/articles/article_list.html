@@ -34,7 +34,7 @@
         <p1 class="card-text"><small class="text">by </small>
           <font class="text" color="#008080">{{ article.author }}</font>
           <small class="text"> at {{ article.created_at }}</small>
-          <a align="right" href="{% url 'article-detail' article.pk %}" align="right" class="btn btn-outline-dark btn-sm">Read more<a>
+          <a align="right" href="{% url 'article-detail-article' article.pk %}" align="right" class="btn btn-outline-dark btn-sm">Read more<a>
           </p1>
         </div>
       </div>

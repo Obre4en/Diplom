@@ -36,12 +36,10 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-
     "articles",
     "ckeditor",
     "crispy_forms",
     "users.apps.UsersConfig",
-
     "api",
     "rest_framework"
 ]

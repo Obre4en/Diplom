@@ -9,7 +9,7 @@ from .views import (
 
 urlpatterns = [
     path("", ArticleListView.as_view(), name="article_list"),
-    path("article/<int:pk>/", ArticleDetailView.as_view(), name="article-detail"),
+    path("article/<int:pk>/", ArticleDetailView.as_view(), name="article-detail-article"),
     path(
         "article/<int:pk>/update/", ArticleUpdateView.as_view(), name="article-update"
     ),

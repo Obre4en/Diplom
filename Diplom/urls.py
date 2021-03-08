@@ -24,6 +24,8 @@ urlpatterns = [
     path("editorjs/", include("django_editorjs_fields.urls")),
     path("", include("articles.urls")),
     path("users/", include("users.urls")),
+
+    path("api/", include("api.urls"))
 ]
 
 if settings.DEBUG:
